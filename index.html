@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>برای ایلار 🤍</title>
+<title>برای ایلار ✨</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
 
@@ -14,47 +14,34 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Vazirmatn',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#faf7f2,#f8f4ee,#fffdf9);
+font-family:'Vazirmatn',sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-min-height:100vh;
 padding:20px;
-overflow:hidden;
-transition:1s;
 }
 
 .card{
 width:100%;
 max-width:700px;
-background:rgba(255,255,255,.8);
-backdrop-filter:blur(15px);
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.1);
 border-radius:30px;
-padding:50px 35px;
+padding:45px 30px;
+box-shadow:0 25px 60px rgba(0,0,0,.4);
 text-align:center;
-box-shadow:0 15px 45px rgba(0,0,0,.08);
-border:1px solid rgba(255,255,255,.7);
-animation:show 1s ease;
-}
-
-@keyframes show{
-from{
-opacity:0;
-transform:translateY(30px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
+color:#fff;
 }
 
 .page{
 display:none;
-animation:fade .6s ease;
+animation:fade .5s ease;
 }
 
 .page.active{
@@ -72,20 +59,27 @@ transform:translateY(0);
 }
 }
 
+.small{
+letter-spacing:3px;
+font-size:12px;
+margin-bottom:15px;
+color:#94a3b8;
+}
+
 h1{
-font-size:38px;
-color:#a67c52;
+font-size:40px;
 margin-bottom:25px;
+font-weight:700;
 }
 
 p{
-font-size:20px;
-line-height:2.4;
-color:#444;
+font-size:18px;
+line-height:2.3;
+color:#e2e8f0;
 }
 
 .buttons{
-margin-top:40px;
+margin-top:35px;
 display:flex;
 justify-content:center;
 gap:12px;
@@ -95,100 +89,159 @@ button{
 border:none;
 padding:12px 28px;
 border-radius:15px;
-cursor:pointer;
+font-family:'Vazirmatn',sans-serif;
 font-size:16px;
+cursor:pointer;
 transition:.3s;
 }
 
 .next{
-background:#c9a86a;
+background:#ec4899;
 color:white;
 }
 
 .prev{
-background:#ece7de;
-color:#444;
+background:rgba(255,255,255,.12);
+color:white;
 }
 
 button:hover{
 transform:translateY(-3px);
 }
 
-.heart-btn{
-position:fixed;
-top:20px;
-left:20px;
-width:55px;
-height:55px;
-border-radius:50%;
-background:white;
-font-size:24px;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
-cursor:pointer;
-display:flex;
-align-items:center;
-justify-content:center;
-z-index:999;
+.final{
+margin-top:30px;
+font-size:20px;
+line-height:2.4;
+color:#fbcfe8;
 }
 
 .footer{
-margin-top:30px;
+margin-top:25px;
 font-size:14px;
-color:#888;
-}
-
-.heart{
-position:fixed;
-font-size:25px;
-pointer-events:none;
-animation:float 4s linear forwards;
-}
-
-@keyframes float{
-0%{
-opacity:1;
-transform:translateY(0) scale(0.5);
-}
-100%{
-opacity:0;
-transform:translateY(-800px) scale(1.5);
-}
-}
-
-.heart-mode{
-background:linear-gradient(135deg,#ffe7ee,#fff1f5,#fff7fa);
+color:#94a3b8;
 }
 
 </style>
 </head>
-
 <body>
-
-<div class="heart-btn" onclick="loveExplosion()">🤍</div>
 
 <div class="card">
 
 <div class="page active">
 
-<h1>سلام 🤍</h1>
+<div class="small">WELCOME</div>
+
+<h1>سلام ایلار ✨</h1>
 
 <p>
-دلم برات تنگ شده...
+یه چیز کوچیک برات ساختم...
 <br><br>
-برای همین تصمیم گرفتم
-به جای یه پیام معمولی
-یه چیز کوچیک برات بسازم.
+فقط خواستم ببینیش :)
 </p>
 
 </div>
 
 <div class="page">
 
-<h1>یه اعتراف کوچیک</h1>
+<div class="small">PAGE 2</div>
+
+<h1>یه توضیح کوتاه</h1>
 
 <p>
-راستش...
+من این سایت رو ساختم برای حرف زدن
+خودم و خودت.
 <br><br>
-چند بار خواستم بهت پیام بدم،
-چ
-  
+دوست دارم کم‌کم بهترش کنم.
+<br>
+یه جای کوچیک که بتونیم حرف بزنیم،
+پیام بذاریم و هر چیزی که دوست داشتیم
+با هم به اشتراک بذاریم.
+</p>
+
+</div>
+
+<div class="page">
+
+<div class="small">LAST PAGE</div>
+
+<h1>یه حرف آخر</h1>
+
+<p>
+اگه موافقی که این سایت رو ادامه بدم و
+بیشتر روش وقت بذارم،
+برگرد و استوریم رو لایک کن 🙂
+<br><br>
+اگه هم موافق نیستی،
+اشکالی نداره.
+<br><br>
+فقط می‌خواستم این صفحه رو برای تو بسازم.
+</p>
+
+<div class="final">
+
+دوستت دارم ❤️
+
+<br>
+
+عاشقتم 🤍
+
+<br>
+
+مراقب خودت باش 🌷
+
+<br>
+
+خداحافظ...
+
+</div>
+
+<div class="footer">
+
+────────
+
+<br><br>
+
+ساخته شده توسط یک نفر که بهت اهمیت میده ✨
+
+</div>
+
+</div>
+
+<div class="buttons">
+<button class="prev" onclick="prevPage()">قبلی</button>
+<button class="next" onclick="nextPage()">بعدی</button>
+</div>
+
+</div>
+
+<script>
+
+let currentPage = 0;
+const pages = document.querySelectorAll(".page");
+
+function showPage(index){
+pages.forEach(page=>{
+page.classList.remove("active");
+});
+pages[index].classList.add("active");
+}
+
+function nextPage(){
+if(currentPage < pages.length - 1){
+currentPage++;
+showPage(currentPage);
+}
+}
+
+function prevPage(){
+if(currentPage > 0){
+currentPage--;
+showPage(currentPage);
+}
+}
+
+</script>
+
+</body>
+</html>
