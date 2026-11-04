@@ -2,11 +2,9 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-<title>برای ایلار ✨</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+<title>Aylar Chat ❤️</title>
 
 <style>
 
@@ -17,229 +15,183 @@ box-sizing:border-box;
 }
 
 body{
-font-family:'Vazirmatn',sans-serif;
-background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
-min-height:100vh;
+height:100vh;
+overflow:hidden;
+font-family:tahoma,sans-serif;
+background:linear-gradient(135deg,#ffb6c1,#d7a8ff);
+}
+
+.chat-app{
+height:100vh;
 display:flex;
-justify-content:center;
+flex-direction:column;
+}
+
+.header{
+height:65px;
+display:flex;
 align-items:center;
-padding:20px;
-}
-
-.card{
-width:100%;
-max-width:700px;
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(20px);
-border:1px solid rgba(255,255,255,0.1);
-border-radius:30px;
-padding:45px 30px;
-box-shadow:0 25px 60px rgba(0,0,0,.4);
-text-align:center;
-color:#fff;
-}
-
-.page{
-display:none;
-animation:fade .5s ease;
-}
-
-.page.active{
-display:block;
-}
-
-@keyframes fade{
-from{
-opacity:0;
-transform:translateY(20px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-.small{
-letter-spacing:3px;
-font-size:12px;
-margin-bottom:15px;
-color:#94a3b8;
-}
-
-h1{
-font-size:40px;
-margin-bottom:25px;
-font-weight:700;
-}
-
-p{
-font-size:18px;
-line-height:2.3;
-color:#e2e8f0;
-}
-
-.buttons{
-margin-top:35px;
-display:flex;
 justify-content:center;
-gap:12px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(15px);
+color:white;
+font-size:24px;
+font-weight:bold;
+border-bottom:1px solid rgba(255,255,255,.2);
 }
 
-button{
+.messages{
+flex:1;
+overflow-y:auto;
+padding:15px;
+display:flex;
+flex-direction:column;
+gap:10px;
+scroll-behavior:smooth;
+}
+
+.message{
+max-width:80%;
+padding:12px 15px;
+background:white;
+border-radius:18px;
+font-size:15px;
+word-wrap:break-word;
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.input-area{
+display:flex;
+gap:10px;
+padding:12px;
+padding-bottom:max(12px,env(safe-area-inset-bottom));
+background:white;
+border-top:1px solid #eee;
+}
+
+.input-area input{
+flex:1;
+height:48px;
 border:none;
-padding:12px 28px;
-border-radius:15px;
-font-family:'Vazirmatn',sans-serif;
+outline:none;
+background:#f4f4f4;
+border-radius:14px;
+padding:0 15px;
 font-size:16px;
-cursor:pointer;
-transition:.3s;
 }
 
-.next{
-background:#ec4899;
+.input-area button{
+width:60px;
+border:none;
+border-radius:14px;
+background:#ff4f8b;
 color:white;
+font-size:18px;
+font-weight:bold;
 }
 
-.prev{
-background:rgba(255,255,255,.12);
-color:white;
-}
-
-button:hover{
-transform:translateY(-3px);
-}
-
-.final{
-margin-top:30px;
-font-size:20px;
-line-height:2.4;
-color:#fbcfe8;
-}
-
-.footer{
-margin-top:25px;
-font-size:14px;
-color:#94a3b8;
+.input-area button:active{
+transform:scale(.97);
 }
 
 </style>
 </head>
+
 <body>
 
-<div class="card">
+<div class="chat-app">
 
-<div class="page active">
-
-<div class="small">WELCOME</div>
-
-<h1>سلام ایلار ✨</h1>
-
-<p>
-یه چیز کوچیک برات ساختم...
-<br><br>
-فقط خواستم ببینیش :)
-</p>
-
+<div class="header">
+❤️ Aylar Chat ❤️
 </div>
 
-<div class="page">
+<div id="messages" class="messages"></div>
 
-<div class="small">PAGE 2</div>
-
-<h1>یه توضیح کوتاه</h1>
-
-<p>
-من این سایت رو ساختم برای حرف زدن
-خودم و خودت.
-<br><br>
-دوست دارم کم‌کم بهترش کنم.
-<br>
-یه جای کوچیک که بتونیم حرف بزنیم،
-پیام بذاریم و هر چیزی که دوست داشتیم
-با هم به اشتراک بذاریم.
-</p>
-
-</div>
-
-<div class="page">
-
-<div class="small">LAST PAGE</div>
-
-<h1>یه حرف آخر</h1>
-
-<p>
-اگه موافقی که این سایت رو ادامه بدم و
-بیشتر روش وقت بذارم،
-برگرد و استوریم رو لایک کن 🙂
-<br><br>
-اگه هم موافق نیستی،
-اشکالی نداره.
-<br><br>
-فقط می‌خواستم این صفحه رو برای تو بسازم.
-</p>
-
-<div class="final">
-
-دوستت دارم ❤️
-
-<br>
-
-عاشقتم 🤍
-
-<br>
-
-مراقب خودت باش 🌷
-
-<br>
-
-خداحافظ...
-
-</div>
-
-<div class="footer">
-
-────────
-
-<br><br>
-
-ساخته شده توسط یک نفر که بهت اهمیت میده ✨
-
+<div class="input-area">
+<input
+id="messageInput"
+type="text"
+placeholder="پیام بنویس..."
+autocomplete="off">
+<button onclick="sendMessage()">➤</button>
 </div>
 
 </div>
 
-<div class="buttons">
-<button class="prev" onclick="prevPage()">قبلی</button>
-<button class="next" onclick="nextPage()">بعدی</button>
-</div>
+<script type="module">
 
-</div>
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
-<script>
+import {
+getFirestore,
+collection,
+addDoc,
+query,
+orderBy,
+onSnapshot
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-let currentPage = 0;
-const pages = document.querySelectorAll(".page");
+const firebaseConfig = {
+apiKey: "AIzaSyCbxQaCdabzJb7k_eNZYJDvRIv9F0s48_k",
+authDomain: "aylarchat-3288b.firebaseapp.com",
+projectId: "aylarchat-3288b",
+storageBucket: "aylarchat-3288b.firebasestorage.app",
+messagingSenderId: "284766593950",
+appId: "1:284766593950:web:4b5407035ab3423284ec8f"
+};
 
-function showPage(index){
-pages.forEach(page=>{
-page.classList.remove("active");
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+window.sendMessage = async function(){
+
+const input=document.getElementById("messageInput");
+const text=input.value.trim();
+
+if(text==="") return;
+
+await addDoc(collection(db,"messages"),{
+text:text,
+time:Date.now()
 });
-pages[index].classList.add("active");
+
+input.value="";
 }
 
-function nextPage(){
-if(currentPage < pages.length - 1){
-currentPage++;
-showPage(currentPage);
+document.getElementById("messageInput").addEventListener("keypress",(e)=>{
+if(e.key==="Enter"){
+sendMessage();
 }
-}
+});
 
-function prevPage(){
-if(currentPage > 0){
-currentPage--;
-showPage(currentPage);
-}
-}
+const q=query(
+collection(db,"messages"),
+orderBy("time")
+);
+
+onSnapshot(q,(snapshot)=>{
+
+const box=document.getElementById("messages");
+
+box.innerHTML="";
+
+snapshot.forEach((doc)=>{
+
+const data=doc.data();
+
+const div=document.createElement("div");
+
+div.className="message";
+
+div.textContent=data.text;
+
+box.appendChild(div);
+
+});
+
+box.scrollTop=box.scrollHeight;
+
+});
 
 </script>
 
